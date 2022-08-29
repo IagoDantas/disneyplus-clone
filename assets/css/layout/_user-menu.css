@@ -28,6 +28,7 @@
   display: inline-block;
   font-size: 1.5rem;
   padding: 1.3rem 2rem;
+  transition: color 0.4s;
 }
 
 .user-menu__profiles {
