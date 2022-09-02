@@ -1,5 +1,3 @@
-
-
 .nav-menu {
   margin-left: 3.7rem;
 }
@@ -54,10 +52,14 @@
   border: 0.1rem solid #393939;
   border-radius: 0.5rem;
   display: none;
+  margin: -2rem;
   padding: 0.4rem 0;
-  position: relative;
-  top: -2rem;
+  position: absolute;
   animation: showFade 0.8s;
+}
+
+.nav-submenu.active {
+  display: block;
 }
 
 .nav-submenu__text {
