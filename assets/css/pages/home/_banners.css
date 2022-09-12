@@ -10,11 +10,18 @@
   align-items: center;
 }
 .banner-slider__item {
-  margin: 0 1rem 3rem;
+  position: relative;
+  padding: 0 1rem 3rem;
   flex-shrink: 0;
   width: 90vw;
 }
-
+.banner-slider__counter {
+  font-size: 2rem;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  z-index: 10;
+}
 .banner-slider__link {
   display: block;
   position: relative;
@@ -39,21 +46,34 @@
 }
 
 .banner-slider__title {
+  animation: slideLeft 1.7s;
   top: 0;
   left: 0;
+  display: none;
   position: absolute;
   width: 100%;
 }
 
-.banners .arrow-slider--left {
+.banner-slider__title.active {
+  display: block;
+}
+
+.banners .arrow-slider {
+  margin-top: -3rem;
   position: absolute;
-  left: 3.6rem;
   z-index: 2;
+  padding: 17rem 0rem;
+}
+
+.banners .arrow-slider--left {
+  left: 0srem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .banners .arrow-slider--right {
-  position: absolute;
-  right: 3.6rem;
-  z-index: 2;
+  right: 0rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .banners .controls-slider {
