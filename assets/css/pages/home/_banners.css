@@ -59,10 +59,12 @@
 }
 
 .banners .arrow-slider {
+  opacity: 0;
   margin-top: -3rem;
   position: absolute;
   z-index: 2;
   padding: 17rem 0rem;
+  transition: opacity 0.25s;
 }
 
 .banners .arrow-slider--left {
@@ -70,6 +72,14 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
+.banners .arrow-slider--left:hover {
+  opacity: 1;
+}
+.banners .arrow-slider--right:hover {
+  opacity: 1;
+}
+
 .banners .arrow-slider--right {
   right: 0rem;
   padding-left: 3rem;
